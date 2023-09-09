@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Shop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.icon">
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+</head>
+<body>
+    <div id="icon">
+        <button onclick="open_menu()" style="padding: 10px; border-radius: 50%;">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            </svg>
+        </button>
+
+    </div>
+    <div id="menu">
+        <div style="text-align:right">
+
+            <button onclick="close_menu()" style="padding: 10px; border-radius: 50%;">
+                <svg style="width: 24px; height: 24px; float: right" viewBox="0 0 24 24" onclick="close_popup()">
+                    <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                </svg>
+            </button>
+        </div>
+        <div>
+
+            <a onclick="close_menu()" class="menu-item" href="#header">
+                01 START
+            </a>
+            <br />
+            <a onclick="close_menu()" class="menu-item" style="  animation-delay: 1s " href="#lecture">
+                01 Curse Lectures
+            </a>
+            <br />
+
+            <a onclick="close_menu()" class="menu-item" style="  animation-delay: 2s " href="#courses">  01 Related Books</a>
+        </div>
+
+    </div>
+    <div id="popup">
+        <div class="card" style="top: 20%; position: absolute; width: 80%; right: 10%; background-color: white; ">
+            <div style="display:flex">
+                <img src="images/book1.jpg" alt="Avatar">
+                <div>
+                    <svg style="width: 24px; height: 24px; float: right" viewBox="0 0 24 24" onclick="close_popup()">
+                        <path fill="currentColor" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg>
+                    <p id="description">
+                    </p>
+                    <br />
+                    <button>خرید</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div>
+        <div class="row">Header</div><br />
+        <div class="row">
+
+            <div class="col col4">column 1 out of 4</div>
+            <div class="col col4">column 2 out of 4</div>
+            <div class="col col4">column 3 out of 4</div>
+            <div class="col col4">column 4 out of 4</div>
+        </div><br />
+        <div class="row">
+
+            <div class="col col3">column 1 out of 3</div>
+            <div class="col col3">column 2 out of 3</div>
+            <div class="col col3">column 3 out of 3</div>
+        </div><br />
+        <div class="row">
+
+            <div class="col col2">column 1 out of 2</div>
+            <div class="col col2">column 2 out of 2</div>
+        </div><br />
+    </div>-->
+
+
+    <div id="header">
+
+        <h1>
+            internet engineering
+        </h1>
+        <a href="#lecture">
+            <button>Courses</button>
+            <br />
+            <br />
+        </a>
+
+    </div>
+    <div class="lecture row" id="lecture">
+        <div class="col col4">
+            <div class="card">
+                <img src="images/js.png" />
+                <h2>JAVASCRIPT</h2>
+                <p>
+                    JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
+                </p>
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="card">
+                <img src="images/css.png" />
+                <h2>CSS</h2>
+                <p>
+                    Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+                </p>
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="card">
+                <img src="images/jquery.png" />
+                <h2>JQUERY</h2>
+                <p>
+                    jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax. It is free, open-source software using the permissive MIT License. As of Aug 2022, jQuery is used by 77% of the 10 million most popular websites.
+                </p>
+            </div>
+        </div>
+        <div class="col col4">
+            <div class="card">
+                <img src="images/html.png" />
+                <h2>HTML</h2>
+                <p>
+                    The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="courses row" id="courses">
+        <div class="col col3">
+            <div class="card">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>
+                                کتاب Clean Code
+                            </h2>
+                            <img src="images/book1.jpg" alt="Avatar">
+
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>
+                                کتاب Clean Code
+                            </h2>
+                            <p>
+                                رابرت سی مارتین (“عمو باب”)
+                            </p>
+                            <p>
+                                ناشر: تولید علم
+                                نام مترجم ها : مهرداد عباسی، سید مرتضی قائم مقامی، حسین مسعودی
+                            </p>
+                            <p>
+                                160,000 تومان
+                            </p>
+                            <button onclick="open_popup(1)">خرید</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col3">
+            <div class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>
+                                کتاب The Clean Coder
+                            </h2>
+                            <img src="images/book2.jpg" alt="Avatar">
+
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>
+                                کتاب The Clean Coder
+                            </h2>
+                            <p>
+                                رابرت سی مارتین (“عمو باب”)
+                            </p>
+                            <p>
+                                ناشر: تولید علم
+                                نام مترجم ها : مهرداد عباسی، حسین مسعودی
+                            </p>
+                            <p>
+                                90,000 تومان
+                            </p>
+                            <button onclick="open_popup(2)">خرید</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col col3">
+            <div class="card">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>
+                                کتاب Clean Architecture
+                            </h2>
+                            <img src="images/book2.jpg" alt="Avatar">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>
+                                کتاب Clean Architecture
+                            </h2>
+                            <p>
+                                رابرت سی مارتین (“عمو باب”)
+                            </p>
+                            <p>
+                                ناشر: تولید علم
+                                نام مترجم ها : مهرداد عباسی، حسین مسعودی
+                            </p>
+                            <p>
+                                90,000 تومان
+                            </p>
+                            <button onclick="open_popup(3)">خرید</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="footer">
+        <div class="row">
+            <div class="col col2">
+                تمامی حقوق این وب سایت محفوظ است
+            </div>
+            <div class="col col2">
+                <a href="#header">  Header</a>
+                <br />
+                <a href="#lecture">
+                    lecture
+                </a>
+                <br />
+                <a href="#courses">
+                    courses
+                </a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var data = [
+            {
+                id: 1,
+                desc: `معرفی کتاب Clean Code
+حتی کد بد هم می‌تواند کاربرد داشته باشد. اما اگر کد تمیز نیست، می‌تواند سازمانِ توسعه‌دهنده را به زانو درآورد. هر سال، ساعت بی‌شمار و منابع قابل توجهی به دلیل نوشتن کد بد از دست می‌رود. اما لازم نیست این اتفاق رخ دهد.
+متخصص نرم افزار سرشناس، رابرت سی مارتین، یک پارادایم انقلابی را با کدنویسی تمیز ارائه می‌دهد: کتاب راهنمای توسعه نرم‌افزار به روش چابک. مارتین همراه با همکارانش از شرکت Object Mentor، بدون مقدمه چینی روش‌های ایده آلی را در توسعه نرم افزارها به روش چابک برای تمیز کردن کد، در این کتاب خلاصه کرده‌اند که در وجود شما درجاتی از استادی نرم افزار را به وجود می‌آورد و شما را به یک برنامه‌نویس بهتر تبدیل می‌کند، اما اگر فقط شما بر روی دستور العمل‌های این کتاب کار کنید.
+کاری که شما انجام خواهید داد، چیست؟ شما در حال خواندن کد -در حقیقت مقدار زیادی کد- خواهید بود. چالش شما این موضوع خواهد بود که فکر کنید چه چیزی در کد درست است و چه چیزی در کد درست نیست. مهمتر از همه، چالش شما این موضوع خواهد بود که ارزش‌های حرفه‌ای خودتان را دوباره شناسایی کنید و تعهد دادن را به مهارت خودتان اضافه کنید. `
+            },
+            {
+                id: 2,
+                desc: `معرفی کتاب The Clean Coder :
+در کتاب The Clean Coder مشاوره‌های کاربردی در مورد همه چیز از تخمین زدن و کدنویسی تا refactoring و تست کردن توسط Robert C. Martin (معروف به عمو باب) بیان شده است. در این کتاب بیشتر تکنیک‌ها پوشش و اکثر نگرش‌ها بیان شده است. Martin نشان می‌دهد که چگونه می‌توان توسعه نرم افزار را همراه با احترام، عزت نفس و افتخار انجام دهیم، خوب و تمیز کار کنیم، صادقانه ارتباط داشته باشیم و بتوانیم تخمین درستی از کارها داشته باشیم. همچنین تصمیمات سخت بگیریم و بفهمیم که هرچقدر دانش بیشتری داشته باشیم مسئولیت بیشتری نیز بر دوش داریم.
+
+به جرات می توان گفت که این کتاب یکی از بهترین کتاب های حال حاضر شامل چندین دهه تجربه برنامه نویسی است و طرفداران زیادی در سراسر دنیا پیدا کرده است.`
+            },
+            {
+                id: 3,
+                desc: ` چرا  قوانین معماری تمیز را به کار ببریم؟
+با اعمال قوانین جامع معماری نرم افزار، شما می‌توانید به طور چشمگیری بهره وری توسعه دهنده را در طول عمر هر سیستم نرم افزاری بهبود بخشید. اکنون با تکیه بر موفقیت کتاب‌های پرفروش Clean Code و The Clean Coder ، رابرت سی مارتین (“عمو باب”)، متخصص چیره دست مشهور نرم افزار ، این قوانین را بیان کرده و به شما در استفاده از آن‌ها کمک می‌کند.
+
+کتاب معماری تمیز  عمو باب، تنها انتخاب موجود نیست. با بیش از نیم قرن تجربه در محیط‌های نرم افزاری قابل تصور، عمو باب به شما می گوید چه گزینه‌هایی را باید انتخاب کنید و چرا آنها برای موفقیت شما بسیار حياتى‌ هستند. همانطور که از عمو باب انتظار دارید ، این کتاب مملو از راه حل‌های منطقی و كامل‌ برای چالش‌های واقعی است که شما با آن روبرو هستید، مواردی که پروژه های شما را به سمت موفقیت برده یا شکست می‌دهد.`
+            }
+        ]
+        function open_menu() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.opacity = 1;
+            document.getElementById('icon').style.display = 'none';
+        }
+        function close_menu() {
+            document.getElementById('menu').style.display = 'none';
+            document.getElementById('menu').style.opacity = 0;
+            document.getElementById('icon').style.display = 'block';
+        }
+
+        function open_popup(i) {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('description').innerText = data[i - 1].desc;
+        }
+        function close_popup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
