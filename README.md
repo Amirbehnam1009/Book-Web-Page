@@ -1,6 +1,6 @@
 # 📘 Web Programming Course Website
 
-A responsive and modern single-page website designed for an "Internet Engineering" or "Web Programming" course. This project was the third assignment for the Fall 2022 semester, focusing on advanced CSS and HTML techniques including CSS Grid, Flexbox, animations, and transitions.
+A responsive and modern single-page website designed for an "Internet Engineering" or "Web Programming" course. This project was the third assignment for the Fall 2022 semester, focusing on advanced CSS and HTML techniques including Flexbox, animations, and transitions.
 
 👨‍🏫 **Under the Supervision of Parham Alvani**
 🍂 ***Fall 2022***
